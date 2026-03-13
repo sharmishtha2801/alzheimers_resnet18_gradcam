@@ -1,34 +1,32 @@
-# alzheimers_resnet18_gradcam
-CNN+ Grad-CAM based Alzheimer's detection from MRI scans using ResNet18.
+Early Detection of Alzheimer's Disease Using Deep Learning
 
-# Alzheimer's Disease Detection using ResNet-18 and Grad-CAM
+# Project Overview
+This project develops a deep learning model to detect Alzheimer’s disease from MRI brain scans using the ResNet18 architecture. The model is trained to classify images into different dementia stages and uses Grad-CAM to visualize the brain regions influencing the prediction.
 
-This project uses a deep learning model (ResNet-18) to classify MRI brain scans and detect Alzheimer's disease. Grad-CAM is applied to visualize important brain regions contributing to the model's decisions.
+# Problem Statement
+Alzheimer’s disease is a progressive neurological disorder affecting memory and cognitive abilities. Early diagnosis can significantly improve treatment outcomes. This project aims to assist early detection using deep learning techniques applied to MRI images.
 
-## 🔧 Tools & Technologies
-- Python, PyTorch, torchvision
-- Grad-CAM, NumPy, Matplotlib
-- Jupyter Notebook, Google Colab
+# Dataset
+MRI brain scan dataset containing the following classes:
+Non-demented, Very mild-demented, Mild-demented, Moderate-demented.
+Images were resized and normalized before training.
 
-- # 📂 Project Structure
-- alzheimers_resnet18_gradcam/
-├── model/ # Pretrained ResNet18 model
-├── outputs/ # Grad-CAM visualizations
-├── data/ # Sample MRI scan(s)
-├── alzheimers_resnet18_gradcam.ipynb # Main notebook
-├── README.md
+# Technologies Used
+Python, Pytorch, resNet18, Numpy, OpenCV, Matplotlib, Grad-CAM
 
-Dataset used: Alzheimer's MRI dataset from Kaggle](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images) 
-Classes: Alzheimer's Disease, Mild Cognitive Impairment, Normal  
+# Computational Workflow
+Data Preprocessing and image Normalisation.
+Train-test data split.
+transfer Learning using ResNet18.
+Model training and Validation.
+Performance Evaluation.
+Grad-CAM visualisation for Interpretability.
 
-## 🚀 How to Run
-1. Clone the repository
-2. Open main_notebook.ipnyb in Jupyter or Google Colab.
-3. Make sure the model (resnet18_trained_model.pth) is in the model/ folder.
-4. Run all cells to see classification results and Grad-CAM output.
+# Results
+The trained model achieved high classification accuracy in identifying Alzheimer’s stages from MRI scans.
+Grad-CAM visualizations highlight the brain regions contributing to the model's prediction, improving interpretability for medical applications.
 
-## Sample Output
-![Grad-CAM Output](https://github.com/user-attachments/assets/dd7f5302-80fc-4888-b846-f613fca563c1)
-
-#### 👩‍💻 Author
-Sharmishtha Bharti (https://github.com/sharmishtha2801)
+# Future Improvements
+Deploy the model as a web application.
+Train using larger MRI datasets.
+Experiment with vision transformers
